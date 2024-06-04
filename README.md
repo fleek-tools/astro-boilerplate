@@ -1,4 +1,5 @@
 # Astro + Fleek Starter Kit
+![fleek-astro](https://github.com/fleek-tools/astro-template/assets/74613246/06df9e74-f065-4a07-9054-432ba78e514d)
 
 
 
