@@ -1,7 +1,6 @@
 # Astro Boilerplate
+
 ![Astro Boilerplate](https://github.com/fleek-tools/astro-template/assets/55561695/504fd185-e977-4350-9d74-467b7dabfd96)
-
-
 
 ## 🚀 Project Structure
 
@@ -43,26 +42,32 @@ All commands are run from the root of the project, from a terminal:
 ## ⚡ How to deploy to Fleek
 
 ### 1. Create a `fleek.json` config file:
+
 You can configure this site deployment using [Fleek CLI]() and running:
+
 ```
  > fleek sites init
   WARN! Fleek CLI is in beta phase, use it under your own responsibility
-   ? Choose one of the existing sites or create a new one. › 
+   ? Choose one of the existing sites or create a new one. ›
     ❯ Create a new site
 ```
- It will prompt you for a `name`, `dist` directory location & `build command`
 
- - `name`: How you want to name the site
- - `dist`: The output directory where the site is located, for this template it's `dist`
- - `build command`: Command to build your site, this will be used to deploy the latest version either by CLI or Github Actions
+It will prompt you for a `name`, `dist` directory location & `build command`
+
+- `name`: How you want to name the site
+- `dist`: The output directory where the site is located, for this template it's `dist`
+- `build command`: Command to build your site, this will be used to deploy the latest version either by CLI or Github Actions
 
 ### 2. Deploy the site
+
 After configuiring your `fleek.json` file, you can deployt the site by running
 
 ```
 fleek sites deploy
 ```
+
 After running it you will get an output like this:
+
 ```
  WARN! Fleek CLI is in beta, use it at your own discretion
   > Success! Deployed!
@@ -73,27 +78,26 @@ After running it you will get an output like this:
 ```
 
 ### Extra features
+
 - **Continuous Integration (CI):** `fleek sites ci` [Documentation.](https://docs.fleek.xyz/services/sites/#continuous-integration-ci)
 - **Adding custom domains:** `fleek domains create` [Documentation.](https://docs.fleek.xyz/services/domains/)
-
 
 ### Keep in mind:
 
 This template has been configured to produce a static output.
 
 ```js
-// astro.config.mjs 
+// astro.config.mjs
 
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    output: 'static',
+  output: "static",
 });
 ```
 
 You can find more information about static builds in [Astro Documentation](https://docs.astro.build/en/guides/content-collections/#building-for-static-output-default)
-
 
 ## 👀 Want to learn more?
 
